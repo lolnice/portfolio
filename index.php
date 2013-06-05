@@ -9,11 +9,14 @@
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
 	</head>
 <body>
-	<div id="bg_container"></div>
+	<?php
+		$path = "img/background_" . rand(0, 3) . ".jpg";
+	?>
+	<div id="bg_container" style="background-image: url('<?php echo $path; ?>');"></div>
 	<header>
 		<nav>
 			<ul>
-				<li><a href="#"><img src="img/icons/icon_home_alt.png" /></a></li>
+				<li><a href="#" id="active_site"><img src="img/icons/icon_home_alt.png" /></a></li>
 				<li><a href="#"><img src="img/icons/icon_portfolio.png" /></a></li>
 				<li><a href="#"><img src="img/icons/icon_about.png" /></a></li>
 			</ul>

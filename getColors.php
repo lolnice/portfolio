@@ -1,6 +1,6 @@
 <?php
 
-$path = "img/background.jpg";
+if (!isset($path)) $path = "img/background.jpg";
 $image = imagecreatefromjpeg($path);
 
 $width = 0;
