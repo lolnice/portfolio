@@ -42,7 +42,7 @@ function printDivW($max) {
 	
 	while ($accu < $max) {
 		$colors = extractColors(randPixel());
-		$rand = rand(10, 80);
+		$rand = rand(5, 80);
 		if ($accu + $rand > $max) {
 			$rand = $max - $accu;
 		}
