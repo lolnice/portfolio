@@ -24,9 +24,13 @@ header
 	float: left;
 }
 
-#color_bars {
+#color_bars_top, #color_bars_bot {
 	overflow: hidden;
 	height: 10px;
+	margin-top: 3px;
+}
+
+#color_bars_bot {
 }
 
 nav
@@ -75,7 +79,9 @@ nav ul li a
 	text-decoration: none;
 	color: #676767;
     text-shadow: 1px 1px 2px #3f3f3f;
-	border: 1px solid rgba(0, 0, 0, 0);;
+	border: 1px solid rgba(0, 0, 0, 0);
+	border-radius: 13px;
+	transition:  background 0.5s;
 	/*border: 1px solid #cccccc;
 	border-radius: 13px;
 	background: #ffffff;
@@ -92,12 +98,18 @@ nav ul li a:hover, #active_site {
 footer
 {
 	clear: both;
+	height: 100px;
 }
 
 article
 {
-	margin-right: 0px;
-	box-shadow: 1px 1px 1px #bbbbbb;
+	border-right: 1px solid #bbbbbb;
+}
+
+.articles
+{
+	margin-top: 70px;
+	margin-bottom: 70px;
 }
 
 #shadow_hider
@@ -108,6 +120,7 @@ article
 
 aside
 {
+	margin-top: 70px;
 }
 
 #bg_container
@@ -137,8 +150,10 @@ aside
 
 #content_wrapper
 {
-	box-shadow: 0px 0px 30px #888888;
-	padding-top: 55px;
+	box-shadow: 0px 0px 20px #aaaaaa;
+	border-top: 0px solid #333333;
+	border-bottom: 1px solid #333333;
+	margin: 50px 0 5px 0;
 }
 
 #latest_headlines
@@ -152,6 +167,12 @@ aside
 	margin-top: 1.6em;
 	border-left: 4px solid #7d7d7d;
 	background: #eeeeee;
+	transition: border-left 0.5s;
+}
+
+#latest_headlines div:hover
+{
+	border-left: 4px solid #4d4d4d;
 }
 
 #slider
@@ -178,6 +199,7 @@ img.slider_img
 	width: 280px;
 	height: 180px;
 	margin: 10px 0 0 10px;
+	border: 1px solid #565656;
 }
 
 img.slider_type
@@ -201,9 +223,11 @@ h1
 {
 	font-size: 2em;
 	font-weight: 200;
-	padding: 0 1em 0 0.9em;
+	margin: 0 1em 0 0.9em;
+	padding: 0 0 0.1em 0;
 	font-family: 'Trebuchet MS', sans-serif;
 	text-transform: uppercase;
+	border-bottom: 1px solid #dedede;
 }
 
 h2
