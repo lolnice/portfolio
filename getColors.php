@@ -7,8 +7,6 @@ $width = 0;
 $height = 0;
 list($width, $height) = getimagesize($path);
 
-printDivW(940);
-
 
 function randPixel() {
 

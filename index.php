@@ -9,9 +9,15 @@
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
 	</head>
 <body>
+	
 	<?php
 		$path = "img/background_" . rand(0, 3) . ".jpg";
 	?>
+
+	<?php
+		include('getColors.php');
+	?>
+	
 	<div id="bg_container" style="background-image: url('<?php echo $path; ?>');"></div>
 	<header>
 		<nav>
@@ -40,7 +46,7 @@
 		<div class="container_12">
 			<div class="grid_12" id="color_bars">
 			<?php
-				include('getColors.php');
+				printDivW(940);
 			?>
 			</div>
 			<div class="grid_12" id="content_wrapper">
